@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020/01/16 13:25:08.825,=D:\C\Project1PCH1.h</Transaction>
+    <Transaction>2020/01/16 13:25:09.106,=D:\C\Unit1.cpp</Transaction>
+    <Transaction>2020/01/16 13:25:47.013,=D:\C\WebCamObjectDetection\FormMain.cpp</Transaction>
+    <Transaction>2020/01/16 13:29:32.647,D:\C\WebCamObjectDetection\Project1PCH1.h=D:\C\Project1PCH1.h</Transaction>
+    <Transaction>2020/01/16 13:29:40.917,D:\C\WebCamObjectDetection\WebCamPCH1.h=D:\C\WebCamObjectDetection\Project1PCH1.h</Transaction>
+    <Transaction>2020/01/16 13:29:40.929,D:\C\WebCamObjectDetection\WebCam.cbproj=D:\C\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
