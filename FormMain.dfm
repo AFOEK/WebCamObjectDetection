@@ -25,7 +25,6 @@ object FrmMain: TFrmMain
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 120
     DesignSize = (
       1162
       117)
@@ -38,7 +37,6 @@ object FrmMain: TFrmMain
       Caption = 'Select &Source'
       TabOrder = 0
       OnClick = btnSelectClick
-      ExplicitWidth = 120
     end
     object btnDisplay: TButton
       Left = 0
@@ -49,7 +47,6 @@ object FrmMain: TFrmMain
       Caption = '&Display Settings'
       TabOrder = 2
       OnClick = btnDisplayClick
-      ExplicitWidth = 120
     end
     object btnFormat: TButton
       Left = 0
@@ -60,7 +57,6 @@ object FrmMain: TFrmMain
       Caption = '&Format Settings'
       TabOrder = 3
       OnClick = btnFormatClick
-      ExplicitWidth = 120
     end
     object btnSource: TButton
       Left = 0
@@ -71,7 +67,6 @@ object FrmMain: TFrmMain
       Caption = 'S&ource Settings'
       TabOrder = 1
       OnClick = btnSourceClick
-      ExplicitWidth = 120
     end
   end
   object pnlCam: TPanel
@@ -82,7 +77,6 @@ object FrmMain: TFrmMain
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitWidth = 120
     object pnlLive: TPanel
       Left = 0
       Top = 0

@@ -18,11 +18,11 @@ __fastcall TFrmMain::TFrmMain(TComponent* Owner)
 void __fastcall TFrmMain::FormCreate(TObject *Sender)
 {
   // load AVICAP32.DLL
-     AVICapDllHandle = LoadLibrary ( "AVICAP32.DLL" );
+	 AVICapDllHandle = LoadLibrary ( L"AVICAP32.DLL" );
   if ( AVICapDllHandle == 0 )
      {
-       MessageBox ( NULL, "LoadLibrary:\nAVICAP32.DLL not found.",
-                          "Error FS 002", MB_ICONSTOP );
+	   MessageBox ( NULL, L"LoadLibrary:\nAVICAP32.DLL not found.",
+						  L"Error FS 002", MB_ICONSTOP );
      }
 
   // load function address (some casting is required...)
@@ -31,8 +31,8 @@ void __fastcall TFrmMain::FormCreate(TObject *Sender)
         GetProcAddress ( AVICapDllHandle, "capCreateCaptureWindowA" );
      if ( capCreateCaptureWindow == NULL )
         {
-          MessageBox ( NULL, "GetProcAddress:\ncapCreateCaptureWindow not found.",
-                             "Error FS 003", MB_ICONSTOP );
+		  MessageBox ( NULL, L"GetProcAddress:\ncapCreateCaptureWindow not found.",
+							 L"Error FS 003", MB_ICONSTOP );
         }
 
  //DoubleBuffered=true;
@@ -47,7 +47,7 @@ void __fastcall TFrmMain::FormCreate(TObject *Sender)
  TempBitmap=new Graphics::TBitmap;
  bmpFrame=new Graphics::TBitmap;
 
- SetProp(FCapHandle, "FRAME", bmpFrame);
+ SetProp(FCapHandle, L"FRAME", bmpFrame);
  capSetCallbackOnFrame(FCapHandle, &frameCallback);
  ImgData=new cImageData(PICWIDTH, PICHEIGHT, 4);
  FirstFrame=new cImageData(PICWIDTH, PICHEIGHT, 4);

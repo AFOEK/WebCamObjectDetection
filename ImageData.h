@@ -82,7 +82,7 @@ class cImageData {
    for(i=0; i<Height; i++) {
     Src=&DataSrc->Pixels[i*CopySize];
     Dest=&Pixels[i*CopySize];
-    memcpy(Dest, Src, CopySize);
+	memcpy(Dest, Src, CopySize);
    }
   }
 
@@ -309,7 +309,7 @@ class cImageData {
   void SetCurrentB(unsigned char Blue)           {   SetCurrentByte(Blue);       }
   void SetCurrentA(unsigned char Alpha)          {   Pixels[Address+3]=Alpha;    }
 
-  bool LoadFromBitmap(unsigned char FileName[])
+  bool LoadFromBitmap(char FileName[])
   {
    bool Suceeded, loop;
    FILE *f;
@@ -358,9 +358,9 @@ class cImageData {
           z=Size / BuffSize;
           Rest=Size % BuffSize;
           RowDataCount=BitmapWidth*BytePerPixel;
-          RowBMPCount=RowBMPCount / BitmapHeight;
+		  RowBMPCount=RowBMPCount / BitmapHeight;
           for(i=1; i<=z; i++) {
-           fread(buffer, BuffSize, 1, f);
+		   fread(buffer, BuffSize, 1, f);
            k=0;
            loop=true;
            while (k<BuffSize && loop) {
