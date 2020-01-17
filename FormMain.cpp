@@ -38,7 +38,7 @@ void __fastcall TFrmMain::FormCreate(TObject *Sender)
  //DoubleBuffered=true;
  pnlLive->DoubleBuffered=true;
  pnlCam->DoubleBuffered=true;
- Threshold=30;
+ Threshold=50;
  FCapHandle=capCreateCaptureWindow("Video", WS_CHILD || WS_VISIBLE, 0, 0, PICWIDTH, PICHEIGHT, pnlLive->Handle, 0);
  //SelectSource();
  SendMessage(FCapHandle, WM_CAP_DRIVER_CONNECT,0,0L);
@@ -245,7 +245,7 @@ void __fastcall TFrmMain::FormOnIdle(TObject *Sender, bool &Done)
 
    if ( DR>Threshold || DG>Threshold || DB>Threshold) {
     Difference=true;
-    //ImgProc->SetARGB(x, y, 255, 255, 0, 0);
+	//ImgProc->SetARGB(x, y, 255, 255, 0, 0);
    } else ImgData->SetARGB(x, y, 255, 255, 255, 255);
   }
  } /*int x, y, Color, tColor;
